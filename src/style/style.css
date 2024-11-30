@@ -75,7 +75,18 @@ nav ul li a {
   text-align: left;
   justify-content: center;
 }
-
+.rodape-text-pai {
+  background-color: #000;
+}
+.rodape-text {
+  color: white;
+}
+.contact {
+  display: flex;
+  padding: 17px;
+  justify-content: space-between;
+  background-color: #003366;
+}
 /* Formulário */
 .form-container {
   background-color: #ffffff;
@@ -155,7 +166,7 @@ h1 {
   border: 2px solid #005b9f;
   border-radius: 10px;
   padding: 15px;
-  margin: 20px auto 13%;
+  margin: 20px 25px 14%;
   text-align: center;
   background-color: #ffffff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -210,9 +221,9 @@ p {
 /* Rodapé */
 footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  background-color: #003366;
+  background-color: #000;
   color: #fff;
   padding: 10px 20px;
 }
