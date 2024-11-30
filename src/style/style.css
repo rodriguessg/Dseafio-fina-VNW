@@ -1,0 +1,287 @@
+/* CSS Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #003366;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.search {
+  display: flex;
+      gap: 9px;
+      border: 1px solid;
+      border-radius: 9px;
+    padding: 4px;
+}
+
+.search input {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: transparent;
+}
+
+.search input::placeholder {
+  color: #fff; /* Cor do placeholder */
+  font-style: italic; /* Opcional, estilo para diferenciar */
+}
+/* Hero Section */
+.hero {
+  background: url('../img/sec.png') no-repeat center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px;
+  height: 300px;
+}
+
+.hero-content {
+  display: flex;
+  margin: 20px auto;
+  width: 90%;
+  text-align: left;
+  justify-content: center;
+}
+
+/* Formulário */
+.form-container {
+  background-color: #ffffff;
+  border: 2px solid #005b9f;
+  border-radius: 10px;
+  width: 320px;
+  max-width: 100%;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 20px auto 9%;
+}
+
+.form-header {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.form-header .icon {
+  width: 40px;
+  height: 40px;
+}
+
+.form-header h2 {
+  font-size: 18px;
+  color: #005b9f;
+  margin-top: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input {
+  padding: 10px;
+  border: 1px solid #005b9f;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+form input:focus {
+  border-color: #003f73;
+  box-shadow: 0 0 5px rgba(0, 91, 159, 0.5);
+}
+
+form button {
+  padding: 10px;
+  background-color: #005b9f;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+form button:hover {
+  background-color: #003f73;
+}
+
+/* Seção de Livros Doados */
+h1 {
+  text-align: left;
+  margin: 20px;
+  color: #fff;
+}
+
+.livros-doados {
+  text-align: center;
+  color: #000;
+}
+
+.book-card {
+  width: 90%;
+  max-width: 200px;
+  border: 2px solid #005b9f;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 20px auto 13%;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.texto {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin:  15px auto;
+}
+.book-card img {
+  width: 100px;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.book-info p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #333333;
+}
+
+/* Por que doar seção */
+.why-donate {
+  padding: 20px;
+  text-align: center;
+}
+p {
+  color: #005695;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 250px;
+  text-align: center;
+}
+
+.card img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+/* Rodapé */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #003366;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.social-media a img {
+  width: 20px;
+  margin-left: 10px;
+}
+.pg {
+  color: #000;
+}
+
+/* Media Query para dispositivos móveis */
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  .texto {
+    display: flex;
+    justify-content: center;
+    width: 67%;
+    margin:  15px auto;
+  }
+  .hero-content {
+    display: flex;
+        margin: 20px auto;
+        width: 75%;
+        text-align: center;
+        justify-content: center;
+    }
+  
+  nav ul {
+    gap: 10px;
+  }
+  .search {
+    display: none;
+  }
+
+  .hero {
+    padding: 20px;
+    height: auto;
+  }
+
+  .form-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .book-card {
+    width: 90%;
+    margin: 10px auto 81%;
+  }
+  .form-header {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 37px;
+  }
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .form-container {
+    margin-bottom: 46%;
+  }
+  footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}
